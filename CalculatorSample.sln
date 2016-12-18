@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FDFF627-3713-4E00-A1C4-D315CBA661C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D8774ABB-C95E-4411-AC4E-E4534A0D3174}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CalculatorSample.Client.Web", "src\CalculatorSample.Client.Web\CalculatorSample.Client.Web.xproj", "{35D77939-2A54-464D-B79D-B7F4F3009C59}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CalculatorSample.Api.Web", "src\CalculatorSample.Api.Web\CalculatorSample.Api.Web.xproj", "{B2EB8A9B-F32D-470B-8369-46929807B4E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35D77939-2A54-464D-B79D-B7F4F3009C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35D77939-2A54-464D-B79D-B7F4F3009C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35D77939-2A54-464D-B79D-B7F4F3009C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35D77939-2A54-464D-B79D-B7F4F3009C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2EB8A9B-F32D-470B-8369-46929807B4E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EB8A9B-F32D-470B-8369-46929807B4E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EB8A9B-F32D-470B-8369-46929807B4E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EB8A9B-F32D-470B-8369-46929807B4E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{35D77939-2A54-464D-B79D-B7F4F3009C59} = {4FDFF627-3713-4E00-A1C4-D315CBA661C8}
+		{B2EB8A9B-F32D-470B-8369-46929807B4E5} = {4FDFF627-3713-4E00-A1C4-D315CBA661C8}
+	EndGlobalSection
+EndGlobal

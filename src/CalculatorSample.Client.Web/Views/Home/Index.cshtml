@@ -1,0 +1,60 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<h2>Math</h2>
+		@using (Html.BeginForm("DoMath", "Home", FormMethod.Post))
+		{
+			<div class="form-group">
+				<label for="number1">Number 1</label>
+				<input type="number" class="form-control" id="number1" name="number1" placeholder="Number 1">
+			</div>
+			<div class="form-group">
+				<label for="number2">Number 2</label>
+				<input type="number" class="form-control" id="number2" name="number2" placeholder="Number 2">
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="operation" id="operationAdd" value="add" checked>
+					Add
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="operation" id="operationSubtract" value="subtract">
+					Subtract
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="operation" id="operationMultiply" value="multiply">
+					Multiply
+				</label>
+			</div>
+			<div class="radio">
+				<label>
+					<input type="radio" name="operation" id="operationDivide" value="divide">
+					Divide
+				</label>
+			</div>
+			<button type="submit">Submit</button>
+		}
+	</div>
+</div>
+@if (Model != null)
+{
+	<div class="row">
+		<div class="col-md-12">
+			@if (Model.GetType() == typeof(Exception))
+			{
+				<p class="bg-danger">Error occurred. You likely exceeded API rate limit or divided by zero.</p>
+			}
+			else
+			{
+				<p class="bg-success">Result: @Model</p>
+			}
+		</div>
+	</div>
+}
